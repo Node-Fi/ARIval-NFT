@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NodeLaunch is ERC721Enumerable, Ownable {
+contract ARIval is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
     string public baseURI;
@@ -22,6 +22,7 @@ contract NodeLaunch is ERC721Enumerable, Ownable {
     ) ERC721(_name, _symbol) {
         setBaseURI(_initBaseURI);
         mint(msg.sender, 100);
+        paused = true;
     }
 
     //internal

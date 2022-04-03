@@ -14,7 +14,7 @@ const deployStorage: DeployFunction = async function ({
     args: [
       "Node Launch Ticket",
       "NLT",
-      "https://raw.githubusercontent.com/Node-Fi/NodeLaunch/main/images/",
+      "https://raw.githubusercontent.com/Node-Fi/ARIval-NFT/main/metadata/",
     ],
     log: true,
     // proxy: {

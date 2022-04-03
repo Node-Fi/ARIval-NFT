@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in {1..151};
+do
+	cp NFT-ARI.png ${i}.png
+done
